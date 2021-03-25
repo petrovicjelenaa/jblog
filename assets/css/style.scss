@@ -298,6 +298,11 @@ footer{
         }
     }
 }
+@media screen and (max-width: 1024px) {
+    #navigacija #icons a .icon{
+        transform: scale(1.1);
+    }
+}
 @media screen and (max-width: 540px) {
     main{
         #posts{
@@ -307,7 +312,17 @@ footer{
             padding-left: 0px;
         }
     }
-   
+    footer{
+        #imgFoo{
+            padding:10px 10px;
+        }
+    }
+    .modal{
+        width:80%!important;
+        top:50%;
+        left:50%;
+        transform: translate(-50%,-50%);
+    }
     
 }
 @media screen and (max-width: 415px) {

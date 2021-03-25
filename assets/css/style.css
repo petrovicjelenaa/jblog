@@ -281,12 +281,29 @@ footer #bottomFoo .top {
   }
 }
 
+@media screen and (max-width: 1024px) {
+  #navigacija #icons a .icon {
+    -webkit-transform: scale(1.1);
+            transform: scale(1.1);
+  }
+}
+
 @media screen and (max-width: 540px) {
   main #posts {
     padding-right: 0px;
   }
   main #sidebar {
     padding-left: 0px;
+  }
+  footer #imgFoo {
+    padding: 10px 10px;
+  }
+  .modal {
+    width: 80% !important;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
   }
 }
 
