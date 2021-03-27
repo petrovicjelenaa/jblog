@@ -78,11 +78,8 @@ main{
     }
     #posts{
         padding-right: 50px;
-        // border-right: 1px solid #999;
         .post{
-            // p{   
-            //     // margin-bottom: .5rem!important;
-            // }
+           
             h2{
                 font-size:3em;
             }
@@ -217,7 +214,9 @@ footer{
                 &:hover{
                     background-color: #222;
                 }
+                
             }
+            
         }
         .copy{
             // text-transform: uppercase;
