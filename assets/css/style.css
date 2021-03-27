@@ -364,6 +364,15 @@ footer #bottomFoo .top {
   }
 }
 
+@media screen and (max-width: 375px) {
+  header #carouselExampleCaptions .carousel-inner .carousel-item .carousel-caption {
+    top: 15%;
+  }
+  header #carouselExampleCaptions .carousel-inner .carousel-item .carousel-caption h1 {
+    font-size: 2em;
+  }
+}
+
 @media screen and (max-width: 320px) {
   header #carouselExampleCaptions .carousel-inner .carousel-item .carousel-caption {
     top: 10%;
