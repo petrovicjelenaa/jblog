@@ -56,12 +56,14 @@ main #mostPopular .card {
   border: 0px !important;
   border-radius: 0px !important;
   padding: 20px;
-  -webkit-transition: .3s;
-  transition: .3s;
+  -webkit-transition: .5s;
+  transition: .5s;
 }
 
 main #mostPopular .card:hover {
-  background-color: rgba(0, 0, 0, 0.05);
+  -webkit-transform: scale(1.12);
+          transform: scale(1.12);
+  z-index: 1;
 }
 
 main #mostPopular .card .card-body p {
@@ -141,6 +143,7 @@ main #sidebar #newsletter {
   margin: 80px 0px;
   background-color: #fff;
   padding: 30px 10px;
+  border-radius: 5px;
 }
 
 main #sidebar #newsletter h3 {
@@ -169,11 +172,52 @@ main #sidebar #instagram {
 main #sidebar #instagram .instagramImg {
   padding-right: 0px !important;
   padding-bottom: 10px;
+  position: relative;
+  -webkit-transition: .3s;
+  transition: .3s;
+}
+
+main #sidebar #instagram .instagramImg .like {
+  position: absolute;
+  height: 93%;
+  top: 0px;
+  width: 94%;
+  visibility: hidden;
+}
+
+main #sidebar #instagram .instagramImg .like .num {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  color: #fff;
+  font-size: 1.2em;
+}
+
+main #sidebar #instagram .instagramImg .like .num p {
+  margin-right: 5px;
+}
+
+main #sidebar #instagram .instagramImg .like .num svg {
+  -webkit-transform: scale(1.05);
+          transform: scale(1.05);
+}
+
+main #sidebar #instagram .instagramImg:hover {
+  -webkit-transform: scale(1.05);
+          transform: scale(1.05);
+}
+
+main #sidebar #instagram .instagramImg:hover .like {
+  background-color: rgba(0, 0, 0, 0.55);
+  visibility: visible;
 }
 
 main #sidebar #latestPosts {
   background: #fff;
   padding: 30px 20px;
+  border-radius: 5px;
 }
 
 main #sidebar #latestPosts .latestPost h4 {
@@ -190,13 +234,13 @@ footer #imgFoo {
 }
 
 footer #imgFoo img {
-  -webkit-transition: .3s ease-in;
-  transition: .3s ease-in;
+  -webkit-transition: .2s ease-in;
+  transition: .2s ease-in;
 }
 
 footer #imgFoo img:hover {
   background-color: #000;
-  padding: 10px;
+  padding: 5px;
 }
 
 footer #bottomFoo {
@@ -321,6 +365,11 @@ footer #bottomFoo .top {
 }
 
 @media screen and (max-width: 540px) {
+  main #mostPopular .card:hover {
+    -webkit-transform: scale(1.05);
+            transform: scale(1.05);
+    z-index: 1;
+  }
   main #posts .post h2 {
     font-size: 2em;
   }
