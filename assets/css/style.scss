@@ -328,6 +328,23 @@ footer{
 .post5{
     background-image: url('../img/post5.jpg');
 }
+@media screen and(max-width:1440px){
+    header{
+        #carouselExampleCaptions{     
+             .carousel-inner{          
+                 .carousel-item { 
+                     .carousel-caption{
+                       
+                         h1{
+                             font-size:2.8em;
+                         }
+                     }
+                 }
+             }   
+        }
+     }
+}
+
 @media screen and (max-width: 1024px) {
     header{
         #carouselExampleCaptions{     
